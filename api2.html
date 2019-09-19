@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<style type="text/css">
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+</style>
+</head>
+	<body>		
+	</body>
+	<script type="text/javascript">
+		function getUrlVars() {
+		    var vars = {};
+		    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
+		    function(m,key,value) {
+		      vars[key] = value;
+		    });
+		    return vars;
+		}
+
+		var yb_id = getUrlVars()["v"];
+
+		if (yb_id) {
+		    document.write(unescape('<iframe style=\"border: 0; position:fixed; top:0; left:0; right:0; bottom:0; width:100%; height:100%\" scrolling=\"no\" FRAMEBORDER=\"0\" src=\"https:\/\/cdn.statically.io\/gh\/vyant\/noname\/5609c766\/api1.html?v='+yb_id+'\" sandbox=\"allow-scripts allow-same-origin\"  ><\/iframe>'));
+		}
+	</script>
+</html>
