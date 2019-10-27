@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="embed-audio-mp3 audio-style">
-  <video id="audio-30133-2" class="wp-audio-shortcode"  preload="none" controls="controls" style="width: 100% !important;height:100% !important;">
+  <video id="audio-30133-2" class="wp-audio-shortcode"  preload="none" controls="controls" style="width: 100% !important">
     <source id="audioSource" type="video/youtube" src="" />
   </video>
 </div> 
@@ -21,7 +21,7 @@
   function gVar(){var n={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(r,i,o){n[i]=o});return n}
   var yb = gVar()["yb"];
   if(yb){mKifrm(yb)}
-  function mKifrm(a){$("#audioSource").attr("src","https://www.youtube.com/watch?v="+a),$("audio,video").mediaelementplayer({success:function(a,e){$("iframe").css("display", "content");var o=$("#audio-30133-2");o[0].pause(),o[0].load()}})}
+  function mKifrm(a){$("#audioSource").attr("src","https://www.youtube.com/watch?v="+a),$("audio,video").mediaelementplayer({success:function(a,e){var o=$("#audio-30133-2");o[0].pause(),o[0].load()}})}
 </script>
 </body>
 </html>
