@@ -23,7 +23,8 @@
   function gVar(){var n={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(r,i,o){n[i]=o});return n}
   var yb = gVar()["yb"];
   if(yb){mKifrm(yb)}
-  function mKifrm(a){$("#audioSource").attr("src","https://www.youtube.com/watch?v="+a),$("audio,video").mediaelementplayer({success:function(a,e){var o=$(".yb_player");o[0].pause(),o[0].load()}})}
+  function mKifrm(a){$("#audioSource").attr("src","https://www.youtube.com/watch?v="+a),$("audio,video").mediaelementplayer({
+    features: ['playpause','progress','current','duration','tracks','volume'],success:function(a,e){var o=$(".yb_player");o[0].pause(),o[0].load()}})}
 </script>
 </body>
 </html>
