@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>JC Music</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.12/mediaelementplayer.min.css" integrity="sha256-ji1bfJaTGnyscoc7LzcV9yNJy5vGKJ0frO3KJo1oaGQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.15-rc1/mediaelementplayer.min.css" integrity="sha256-ji1bfJaTGnyscoc7LzcV9yNJy5vGKJ0frO3KJo1oaGQ=" crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.12/mediaelement-and-player.min.js" integrity="sha256-z7JbZVaNbNzLvOCFHUNrjqnZRojZbRAxgr4KU2qL0qc=" crossorigin="anonymous"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.15-rc1/mediaelement-and-player.min.js" integrity="sha256-sWoIU8FztXiCCgXMPoPsqoOE0tHN8htj0n8A8ETxgSE=" crossorigin="anonymous"></script>
   <style type="text/css">
     html{height:100%;margin:0;}body{display:flex;flex-direction:column;width:100%;margin: 0;}
     .yb_player {height: 40px !important}
@@ -24,7 +24,7 @@
   var yb = gVar()["yb"];
   if(yb){mKifrm(yb)}
   function mKifrm(a){$("#audioSource").attr("src","https://www.youtube.com/watch?v="+a),$("audio,video").mediaelementplayer({
-    features: ['playpause','progress','current','duration','tracks','volume'],success:function(a,e){var o=$(".yb_player");o[0].pause(),o[0].load()}})}
+    features: ['playpause','progress','current','duration','tracks','volume'],success:function(a,e){var o=$(".yb_player");o[0].load()}})}
 </script>
 </body>
 </html>
