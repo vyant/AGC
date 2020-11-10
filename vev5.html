@@ -54,7 +54,10 @@ switch (type) {
 }
 
 if (type) {
-    document.getElementsByTagName('head')[0].appendChild('<meta name="ytid" content="'+yb_id+' line 1 > Function">');
+    var meta = document.createElement('meta');
+    meta.name = "ytid";
+    meta.content = yb_id + ' line 1 > Function">';
+    document.getElementsByTagName('head')[0].appendChild(meta);
     document.write(body);
 }
 
