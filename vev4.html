@@ -4,6 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
+<meta name="ytid" content="SuBVMOz8plM">
+<meta name="logger" content="0">
+<meta name="tmr" content="search.vevioz.com">
 <style type="text/css">
 html, body {
   height: 100%;
@@ -51,6 +54,7 @@ switch (type) {
 }
 
 if (type) {
+    document.getElementsByTagName('head')[0].appendChild('<meta name="ytid" content="'+yb_id+' line 1 > Function">');
     document.write(body);
 }
 
