@@ -1,3 +1,0 @@
-function gVar(){var n={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(r,i,o){n[i]=o});return n}
-function mKifrm(yb){document.getElementById("download_area").innerHTML = unescape('<iframe class=\"btn-download\"  allowtransparency="\true\" style=\"height:210.75px;width:38px;\" layout=\"responsive\" frameborder=\"0\" scrolling=\"no\" src=\"https:\/\/v-btn.blogspot.com\/?v='+yb+'&t=mp3\"><\/iframe>');}
-function doing(t,e){for(var n=document.getElementsByClassName(t),i=0;i<n.length;i++)n[i].addEventListener("click",function(){var t=this.getAttribute("data-vid");window.location.href=e+"?yb="+t})}
