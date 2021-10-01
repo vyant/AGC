@@ -27,12 +27,14 @@ var yb_id = gVar()["v"];
 var type = gVar()["t"];
 
 var mp3 = `<div style="width:100%;margin-bottom:20px;max-height:40px;overflow:hidden">
-			<iframe src="//recordmp3.co/#/watch?layout=button&t_press_to_start=Download%20MP3&t_waiting_for_worker=Prepare..&t_in_queue=Converting&t_converting=Process...&t_done=Download&v=`+yb_id+`" style="border: 0; top:0; left:0; right:0; bottom:0; width:100%; height:100%" scrolling="no" FRAMEBORDER="0"></iframe>
+			<iframe src="//api.vevioz.com/?v=`+yb_id+`&type=mp3" style="border: none; top:0; left:0; right:0; bottom:0; width:100%; height:150px" scrolling="no" FRAMEBORDER="0"></iframe>
 		</div>`;
 
 var mp4 = `<div style="width:100%;margin-bottom:20px;max-height:40px;overflow:hidden">
-			<iframe src="//recordmp3.co/#/watch?layout=button&t_press_to_start=Download%20MP3&t_waiting_for_worker=Prepare..&t_in_queue=Converting&t_converting=Process...&t_done=Download&v=`+yb_id+`&amp;format=video" style="border: 0; top:0; left:0; right:0; bottom:0; width:100%; height:100%" scrolling="no" FRAMEBORDER="0"></iframe>
+			<iframe src="//api.vevioz.com/?v=`+yb_id+`&type=videos" style="border: none; top:0; left:0; right:0; bottom:0; width:100%; height:150px" scrolling="no" FRAMEBORDER="0"></iframe>
 		</div>`;
+
+
 
 var body = '';
 
